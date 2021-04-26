@@ -22,16 +22,16 @@ Scenario Outline: Search products by category
      |"Bathroom"   |
       
 
-#Scenario Outline: Search one product using exact match
- #  Given user is on the home page
-  # When user search a product in search bar using <productName>
-   #Then the user show the <productName> in first place in the products page
+Scenario Outline: Search one product using exact match
+  Given user is on the home page
+   When user search a product in search bar using <productName>
+   Then the user show the <productName> in first place in the products page
 
-   #Examples: 
-    # | productName                                                                                            |
-     #| "HOMCOM Stainless Steel Wall mounted Bathroom Mirror Cabinet Double Doors 600W (mm)"                   |
-   #  | "HOMCOM 2 Seater Modern Double Seat Sofa Compact Loveseat Couch Sofabed Padded Linen Wood Legs - Grey" |
-    # | "HOMCOM 360° Rotating Corner Desk Storage Shelf Combo Workstation L-Shaped - Black"                    |
+   Examples: 
+     | productName                                                                                            |
+     | "HOMCOM Stainless Steel Wall mounted Bathroom Mirror Cabinet Double Doors 600W (mm)"                   |
+     | "HOMCOM 2 Seater Modern Double Seat Sofa Compact Loveseat Couch Sofabed Padded Linen Wood Legs - Grey" |
+     | "HOMCOM 360° Rotating Corner Desk Storage Shelf Combo Workstation L-Shaped - Black"                    |
 
 
 
