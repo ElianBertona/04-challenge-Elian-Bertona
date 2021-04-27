@@ -1,7 +1,7 @@
 Feature: Validate search bar behavior
          As a user I want to use the search bar in different way searching by exact product and category
          and I want to show the suggestions and categories in search bar to help me in my task
-         and I want so show the seach history in search helper
+         and I want so show the search history in search helper
       
 Scenario: Validate suggestions and categories
     Given user is on the home page
