@@ -1,7 +1,6 @@
-# Manomano
- ManomanoChallenge
- 
- Based on Serenity+Cucumber4
+# Web test automation
+
+Based on Serenity+Cucumber4
 - Scenarios
   - Validate search history
   - Validate suggestions and categories
