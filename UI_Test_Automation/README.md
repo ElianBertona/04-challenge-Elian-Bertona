@@ -2,8 +2,9 @@
  ManomanoChallenge
  
  Based on Serenity+Cucumber4
-- Scenarion
+- Scenarios
   - Validate search history
+  - Validate suggestions and categories
   - Search products by category
   - Search one product using exact match
 - Structure
