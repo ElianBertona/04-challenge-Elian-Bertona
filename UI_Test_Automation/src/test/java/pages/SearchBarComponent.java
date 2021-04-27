@@ -21,5 +21,9 @@ public class SearchBarComponent extends PageObject{
 	@Step
 	public void productIsPresentInSeachHistory(String product) {
 		searchbar.productIsPresentInSearchHistory(product);
+	}
+
+	public void suggestionsAndCategoriesArePresentInSeachBar() {
+		searchbar.suggestionsAndCategoriesArePresentInSeachBar();
 	}	
 }

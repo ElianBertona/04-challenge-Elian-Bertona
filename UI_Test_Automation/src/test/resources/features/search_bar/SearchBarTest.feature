@@ -2,16 +2,12 @@ Feature: Validate search bar behavior
          As a user I want to use the search bar in different way like exact product and category
          and I want to show the product in History in search bar to help me in my task
       
-Scenario Outline: Validate search history
+Scenario: Validate suggestions and categories
     Given user is on the home page
-    When user search a product in search bar using <productName>
-    Then the user show the <productName> in search history in the search bar 
+    When user type in search bar
+    Then the user show the suggestions and categories in search bar 
 
-    Examples: 
-      | productName        |
-      |"Table"  					 |
 
-     
 Scenario Outline: Search products by category 
    Given user is on the home page
    When user search a product in search bar using <productType>
