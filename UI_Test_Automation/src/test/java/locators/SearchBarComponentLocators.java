@@ -20,7 +20,7 @@ public class SearchBarComponentLocators extends PageObject {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(
 						By.cssSelector(".Suggestions_root__Lf3Ip > div > div:nth-child(1) > div"))).getText()
 						.contains("SUGGESTION"));
-		assertTrue("The SUGGESTION is not showing",$(By.cssSelector(".Suggestions_root__Lf3Ip > div > div:nth-child(2) > div")).getText()
+		assertTrue("The CATEGORIES is not showing",$(By.cssSelector(".Suggestions_root__Lf3Ip > div > div:nth-child(2) > div")).getText()
 						.contains("CATEGORIES"));
 	}
 
@@ -46,6 +46,7 @@ public class SearchBarComponentLocators extends PageObject {
 
 	public void typeInSearch(String name) {
 		$(By.id("searchbar")).type(name);
+		getDriver().manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 	}
 
 	public void setEnter() {

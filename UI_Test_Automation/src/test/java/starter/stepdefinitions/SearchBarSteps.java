@@ -29,7 +29,6 @@ public class SearchBarSteps {
 		searchBar.productIsPresentInSeachHistory(product);
 	} 
 
-
 	@Then("the user show the suggestions and categories in search bar")
 	public void the_user_show_the_sugestions_and_categories_in_search_bar() {
 		searchBar.suggestionsAndCategoriesArePresentInSeachBar();

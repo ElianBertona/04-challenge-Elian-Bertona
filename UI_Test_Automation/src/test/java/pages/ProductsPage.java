@@ -13,11 +13,6 @@ public class ProductsPage extends PageObject{
 		productsLocators.productIsPresentInFirtPlace(product);
 	}	
 	
-	/*
-	 * @Step public void productIsPresent(String product) {
-	 * productsLocators.productIsPresent(product); }
-	 */
-	
 	@Step
 	public void productsByCategoryArePresentInTheFirstPlaces(String category) {
 		productsLocators.productsByCategory(category);

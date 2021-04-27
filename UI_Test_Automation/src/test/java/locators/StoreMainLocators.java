@@ -10,9 +10,8 @@ import net.serenitybdd.core.pages.PageObject;
 public class StoreMainLocators extends PageObject {
 
 	public void allowCookies() {
-		getDriver().manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
+		getDriver().manage().timeouts().implicitlyWait(2500, TimeUnit.MILLISECONDS);
 		JavascriptExecutor executor = (JavascriptExecutor) getDriver();
-		//getDriver().manage().timeouts().setScriptTimeout(3500, TimeUnit.MILLISECONDS);
 		executor.executeScript("arguments[0].click();",
 				$(By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")));
 	}
@@ -20,6 +19,6 @@ public class StoreMainLocators extends PageObject {
 	public void goToFirtCategory() {
 		$(By.cssSelector(".styles_subHeaderLeft__1necg > div > button > span")).click();
 		$(By.xpath("//a[@href='/hub/garden-and-outdoor-823']")).click();
-		getDriver().manage().timeouts().pageLoadTimeout(4, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().pageLoadTimeout(6, TimeUnit.SECONDS);
 	}
 }
